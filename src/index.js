@@ -20,9 +20,9 @@ reportWebVitals();
 
 
 class EventHandling extends React.Component{
-  constructor(props){
+/*   constructor(props){
     super(props);
-  }
+  } */
   handleClick(){
     console.log("Event Accourd");
   }

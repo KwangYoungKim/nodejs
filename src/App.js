@@ -27,11 +27,13 @@ import Customer from './components/Customer';
     )
   }
  */
-const customer ={
-  'name':'김광용',
-  'birthday':'650426',
-  'gender':'남자',
-  'job':'회사원'
+const customer = {
+  'id': 1,
+  'image': 'https://placeimg.com/64/64/any',
+  'name': '김광용',
+  'birthday': '650426',
+  'gender': '남자',
+  'job': '회사원'
 
 
 }
@@ -39,6 +41,8 @@ class App extends Component {
   render() {
     return (
       <Customer
+        id={customer.id}
+        image={customer.image}
         name={customer.name}
         birthday={customer.birthday}
         gender={customer.gender}
