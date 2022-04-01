@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
+import Customer from './components/Customer';
 
 /* function App() {
   return (
@@ -15,8 +16,7 @@ import './App.css';
     </div>
   );
 } */
-class App extends Component{
-  render(){
+/*   render(){
     return(
       <div className="gray-background">
           <img src={logo} alt="logo"/>
@@ -24,6 +24,26 @@ class App extends Component{
             Let's develop management system!</h2>
           </p>
       </div>
+    )
+  }
+ */
+const customer ={
+  'name':'김광용',
+  'birthday':'650426',
+  'gender':'남자',
+  'job':'회사원'
+
+
+}
+class App extends Component {
+  render() {
+    return (
+      <Customer
+        name={customer.name}
+        birthday={customer.birthday}
+        gender={customer.gender}
+        job={customer.job}
+      />
     )
   }
 }
